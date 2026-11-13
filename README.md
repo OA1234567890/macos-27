@@ -723,3 +723,27 @@ import {nothing} from '//resources/lit/v3_0/lit.rollup.js';
   </defs>
 </svg>
 <!--_html_template_end_--></template></ntp-app>
+src/
+├── App.jsx               # Root component, boot/lock/desktop stage manager
+├── app/                  # Individual macOS apps
+│   ├── Finder.jsx        # File manager
+│   ├── Safari.jsx        # Web browser
+│   ├── Terminal.jsx      # Terminal emulator
+│   ├── Spotify.jsx       # Music player
+│   ├── Gallary.jsx       # Photo gallery
+│   ├── Settings.jsx      # System settings
+│   ├── Trash.jsx         # Trash bin
+│   └── Blogs/
+│       └── BlogsSection.jsx  # Notes app
+
+├── components/           # Shared UI components
+│   ├── AppWindow.jsx     # Draggable/resizable window shell
+│   ├── Dock.jsx          # macOS dock
+│   ├── TopBar.jsx        # Menu bar      `  
+│   └── ContextMenu.jsx   # Right-click menu
+├── layouts/
+│   ├── DesktopWindow.jsx # Desktop environment
+│   ├── LockScreen.jsx    # Lock screen
+│   └── PowerScreen.jsx   # Boot/power screen
+└── store/
+    └── Appstore.js       # Window management store
